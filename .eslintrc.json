@@ -1,0 +1,59 @@
+// yarn add -D eslint prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-security eslint-plugin-simple-import-sort eslint-plugin-sonarjs eslint-plugin-unicorn
+
+{
+	"env": {
+		"browser": true,
+		"es6": true,
+		"node": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"prettier",
+		"plugin:jsx-a11y/recommended",
+		"plugin:react/recommended",
+		"plugin:sonarjs/recommended",
+		"plugin:unicorn/recommended",
+		"plugin:security/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:@typescript-eslint/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": 2021,
+		"sourceType": "module"
+	},
+	"plugins": ["simple-import-sort"],
+	"rules": {
+		// "@typescript-eslint/no-use-before-define": "off",
+		// "@typescript-eslint/explicit-function-return-type": "off",
+		"@typescript-eslint/explicit-module-boundary-types": "off",
+		"@typescript-eslint/no-explicit-any": "off",
+		"@typescript-eslint/no-unused-vars": [
+			2,
+			{
+				"argsIgnorePattern": "^_"
+			}
+		],
+		"@typescript-eslint/no-var-requires": "off", // already handled by unicorn
+		"no-console": "error",
+		"react/display-name": "off",
+		"react/prop-types": "off",
+		"react/react-in-jsx-scope": "off",
+		"simple-import-sort/exports": "error",
+		"simple-import-sort/imports": "error",
+		"unicorn/filename-case": "off"
+		// "unicorn/prevent-abbreviations": "off",
+		// "unicorn/prefer-module": "off"
+		// "unicorn/no-null": "off",
+		// "react-hooks/exhaustive-deps": "off",
+		// "sonarjs/no-duplicate-string": "off"
+	},
+	"settings": {
+		"react": {
+			"version": "detect"
+		}
+	}
+}
