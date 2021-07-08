@@ -1,4 +1,5 @@
 // yarn add -D eslint prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-config-prettier eslint-plugin-jsx-a11y eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-security eslint-plugin-simple-import-sort eslint-plugin-sonarjs eslint-plugin-unicorn
+// yarn add -D eslint prettier @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-simple-import-sort eslint-plugin-sonarjs eslint-plugin-unicorn
 
 {
 	"env": {
